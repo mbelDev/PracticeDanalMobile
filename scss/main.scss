@@ -123,7 +123,6 @@ video {
 
 /* -- techDanal -- */
 .main-tech {
-  height: 100vh;
   position: relative;
   font-size: 24px;
   text-align: left;
@@ -157,7 +156,7 @@ video {
   }
   &__ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 90%;
     position: absolute;
