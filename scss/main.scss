@@ -124,13 +124,13 @@ video {
 /* -- techDanal -- */
 .main-tech {
   position: relative;
+  height: auto;
   font-size: 24px;
   text-align: left;
   color: #fff;
   background-color: #2475ee;
   &__inner {
-    height: 555px;
-    position: absolute;
+    position: relative;
     h2 {
       display: inline-block;
       position: relative;
@@ -158,9 +158,8 @@ video {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 90%;
-    position: absolute;
-    top: 45%;
+    position: relative;
+
     li {
       padding: 10px 10px;
       list-style: none;
@@ -176,6 +175,9 @@ video {
       }
     }
   }
+  .container {
+    height: auto;
+  }
 }
 
 /* -- globalDanal -- */
@@ -186,9 +188,8 @@ video {
   background: #1b2d50 url(../img/img_main02.png) no-repeat fixed;
   background-size: cover;
   &__inner {
-    height: 555px;
     padding: 0 20px;
-    position: absolute;
+    position: relative;
     h2 {
       display: inline-block;
       position: relative;
@@ -217,8 +218,7 @@ video {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    position: absolute;
-    top: 30%;
+    position: relative;
     li {
       width: 100%;
       height: 100%;
@@ -292,7 +292,7 @@ video {
     }
   }
   .container {
-    height: 100vh;
+    height: 100%;
     padding: 0;
   }
 }
@@ -328,12 +328,14 @@ video {
       height: 400px;
       position: relative;
       padding: 0 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       &__img {
         width: 200px;
         height: 200px;
         overflow: hidden;
         position: relative;
-        left: -150px;
         border-radius: 50%;
       }
       img {
@@ -346,13 +348,12 @@ video {
         font-weight: 400;
         text-align: center;
         position: relative;
-        left: -100px;
       }
       span {
         display: block;
         position: absolute;
-        right: -30px;
         top: 50px;
+        left: 15%;
         z-index: 999;
         padding: 8px 17px;
         font-size: 10pt;

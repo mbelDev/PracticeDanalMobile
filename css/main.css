@@ -124,14 +124,14 @@ video {
 /* -- techDanal -- */
 .main-tech {
   position: relative;
+  height: auto;
   font-size: 24px;
   text-align: left;
   color: #fff;
   background-color: #2475ee;
 }
 .main-tech__inner {
-  height: 555px;
-  position: absolute;
+  position: relative;
 }
 .main-tech__inner h2 {
   display: inline-block;
@@ -159,9 +159,7 @@ video {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 90%;
-  position: absolute;
-  top: 45%;
+  position: relative;
 }
 .main-tech__ul li {
   padding: 10px 10px;
@@ -177,6 +175,9 @@ video {
   width: 100px;
   height: 100px;
 }
+.main-tech .container {
+  height: auto;
+}
 
 /* -- globalDanal -- */
 .main-global {
@@ -187,9 +188,8 @@ video {
   background-size: cover;
 }
 .main-global__inner {
-  height: 555px;
   padding: 0 20px;
-  position: absolute;
+  position: relative;
 }
 .main-global__inner h2 {
   display: inline-block;
@@ -218,8 +218,7 @@ video {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  position: absolute;
-  top: 30%;
+  position: relative;
 }
 .main-global__ul li {
   width: 100%;
@@ -293,7 +292,7 @@ video {
   background: url(../img/icon_arr04.png) no-repeat 90% 50%/22px 12px;
 }
 .main-global .container {
-  height: 100vh;
+  height: 100%;
   padding: 0;
 }
 
@@ -333,13 +332,15 @@ video {
   height: 400px;
   position: relative;
   padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main-family .swiper-family .swiper-slide__img {
   width: 200px;
   height: 200px;
   overflow: hidden;
   position: relative;
-  left: -150px;
   border-radius: 50%;
 }
 .main-family .swiper-family .swiper-slide img {
@@ -352,13 +353,12 @@ video {
   font-weight: 400;
   text-align: center;
   position: relative;
-  left: -100px;
 }
 .main-family .swiper-family .swiper-slide span {
   display: block;
   position: absolute;
-  right: -30px;
   top: 50px;
+  left: 15%;
   z-index: 999;
   padding: 8px 17px;
   font-size: 10pt;
